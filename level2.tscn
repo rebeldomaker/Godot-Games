@@ -1,0 +1,572 @@
+[gd_scene load_steps=20 format=3 uid="uid://cbhtweudyijqn"]
+
+[ext_resource type="Texture2D" uid="uid://brxltfpng5dty" path="res://Autumn.png" id="1_2hcmb"]
+[ext_resource type="Texture2D" uid="uid://cq2t3i8cl5jok" path="res://full.png" id="2_2cuf3"]
+[ext_resource type="PackedScene" uid="uid://cfl8p22iwdqii" path="res://npcs_player/character_body_2d.tscn" id="3_eyo6p"]
+[ext_resource type="Script" path="res://score_collecting.gd" id="4_1yjl2"]
+[ext_resource type="AudioStream" uid="uid://ddr6hh6km1f5t" path="res://Collect_Point_2.wav" id="4_61mcc"]
+[ext_resource type="Script" path="res://coin_sfx.gd" id="5_rm8df"]
+[ext_resource type="PackedScene" uid="uid://dsud0i2xayun5" path="res://scenes/coinAndCollectables.tscn" id="5_yrkrn"]
+[ext_resource type="AudioStream" uid="uid://cf1tk6uinfi8q" path="res://Jump.wav" id="6_d73bp"]
+[ext_resource type="Script" path="res://speechPanelBubble.gd" id="6_x3hfa"]
+[ext_resource type="PackedScene" uid="uid://cwsxfsqa0hm7c" path="res://scenes/godot_robot.tscn" id="7_07uee"]
+[ext_resource type="Texture2D" uid="uid://87hmgrbo4v2a" path="res://overworld_graphics/Ceasar's_Mushroom.png" id="8_o0tbu"]
+[ext_resource type="Texture2D" uid="uid://bnj2nvj8f0r2t" path="res://cooltext470347419674391.png" id="10_jjl4f"]
+[ext_resource type="Texture2D" uid="uid://81c6ossyqt0" path="res://godot_emoji_16.png" id="10_uupti"]
+[ext_resource type="AudioStream" uid="uid://cr0dwsuf3sl0l" path="res://You_re in the Future.ogg" id="14_myjso"]
+[ext_resource type="Script" path="res://audio_stream_player.gd" id="15_7pe48"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4sqy8"]
+texture = ExtResource("2_2cuf3")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:0/0 = 0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+20:0/0 = 0
+21:0/0 = 0
+22:0/0 = 0
+23:0/0 = 0
+24:0/0 = 0
+25:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+11:1/0 = 0
+13:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+21:1/0 = 0
+22:1/0 = 0
+23:1/0 = 0
+24:1/0 = 0
+25:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+11:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+21:2/0 = 0
+22:2/0 = 0
+22:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+23:2/0 = 0
+24:2/0 = 0
+24:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+25:2/0 = 0
+25:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+11:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+16:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+21:3/0 = 0
+21:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+22:3/0 = 0
+22:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+23:3/0 = 0
+23:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+24:3/0 = 0
+24:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+25:3/0 = 0
+25:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:4/0 = 0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:4/0 = 0
+16:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+19:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:4/0 = 0
+20:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+21:4/0 = 0
+22:4/0 = 0
+23:4/0 = 0
+24:4/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+11:5/0 = 0
+13:5/0 = 0
+15:5/0 = 0
+15:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:5/0 = 0
+16:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:5/0 = 0
+17:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:5/0 = 0
+18:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:5/0 = 0
+19:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:5/0 = 0
+20:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+21:5/0 = 0
+22:5/0 = 0
+23:5/0 = 0
+24:5/0 = 0
+15:6/0 = 0
+15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:6/0 = 0
+16:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:6/0 = 0
+17:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:6/0 = 0
+18:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:6/0 = 0
+19:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:6/0 = 0
+20:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+21:6/0 = 0
+22:6/0 = 0
+23:6/0 = 0
+24:6/0 = 0
+0:7/0 = 0
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:7/0 = 0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:7/0 = 0
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:7/0 = 0
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:7/0 = 0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:7/0 = 0
+7:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:7/0 = 0
+8:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:7/0 = 0
+9:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:7/0 = 0
+11:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:7/0 = 0
+17:7/0 = 0
+17:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:7/0 = 0
+18:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+11:8/0 = 0
+13:8/0 = 0
+15:8/0 = 0
+15:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:8/0 = 0
+16:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:8/0 = 0
+17:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+11:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+11:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+0:11/0 = 0
+0:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:11/0 = 0
+1:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:11/0 = 0
+2:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:11/0 = 0
+4:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+11:12/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_yrefn"]
+physics_layer_0/collision_layer = 1
+sources/2 = SubResource("TileSetAtlasSource_4sqy8")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2d0q8"]
+radius = 17.0294
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6fe0"]
+bg_color = Color(0.136051, 0.35041, 0.619254, 0.427451)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.0408996, 0.113853, 0.198509, 1)
+border_blend = true
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.022
+anchor_top = 0.032
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -508.344
+offset_top = -516.736
+offset_right = 6848.0
+offset_bottom = 508.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_2hcmb")
+stretch_mode = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+tile_set = SubResource("TileSet_yrefn")
+format = 2
+layer_0/tile_data = PackedInt32Array(2555904, 2, 0, 2555905, 65538, 0, 2555906, 65538, 0, 2555907, 65538, 0, 2555908, 65538, 0, 2555909, 65538, 0, 2555910, 65538, 0, 2555911, 65538, 0, 2555912, 65538, 0, 2555913, 65538, 0, 2555914, 65538, 0, 2555915, 65538, 0, 2555916, 65538, 0, 2555917, 65538, 0, 2555918, 65538, 0, 2555919, 65538, 0, 2555920, 65538, 0, 2555921, 65538, 0, 2555922, 65538, 0, 2555923, 65538, 0, 2555924, 65538, 0, 2555925, 65538, 0, 2555926, 65538, 0, 2555927, 65538, 0, 2555928, 131074, 0, 2621440, 2, 1, 2686976, 2, 2, 2621441, 65538, 1, 2686977, 65538, 2, 2621442, 65538, 1, 2686978, 65538, 2, 2621443, 65538, 1, 2686979, 65538, 2, 2621444, 65538, 1, 2686980, 65538, 2, 2621445, 65538, 1, 2686981, 65538, 2, 2621446, 65538, 1, 2686982, 65538, 2, 2621447, 65538, 1, 2686983, 65538, 2, 2621448, 65538, 1, 2686984, 65538, 2, 2621449, 65538, 1, 2686985, 65538, 2, 2621450, 65538, 1, 2686986, 65538, 2, 2621451, 65538, 1, 2686987, 65538, 2, 2621452, 65538, 1, 2686988, 65538, 2, 2621453, 65538, 1, 2686989, 65538, 2, 2621454, 65538, 1, 2686990, 65538, 2, 2621455, 65538, 1, 2686991, 65538, 2, 2621456, 65538, 1, 2686992, 65538, 2, 2621457, 65538, 1, 2686993, 65538, 2, 2621458, 65538, 1, 2686994, 65538, 2, 2621459, 65538, 1, 2686995, 65538, 2, 2621460, 65538, 1, 2686996, 65538, 2, 2621461, 65538, 1, 2686997, 65538, 2, 2621462, 65538, 1, 2686998, 65538, 2, 2621463, 65538, 1, 2686999, 65538, 2, 2621464, 131074, 1, 2687000, 131074, 2, 2293781, 1179650, 0, 2359317, 1179650, 1, 2424853, 1179650, 2, 2490389, 1441794, 1, 2293782, 1245186, 0, 2359318, 1245186, 1, 2424854, 1245186, 2, 2490390, 1245186, 3, 2293783, 1310722, 0, 2359319, 1310722, 1, 2424855, 1310722, 2, 2490391, 1441794, 268435457, 2293774, 1310722, 268435456, 2359310, 1310722, 268435457, 2424846, 1310722, 268435458, 2490382, 1310722, 268435459, 2293775, 1245186, 268435456, 2359311, 1245186, 268435457, 2424847, 1245186, 268435458, 2490383, 1245186, 268435459, 2293776, 1179650, 268435456, 2359312, 1179650, 268435457, 2424848, 1179650, 268435458, 2490384, 1441794, 268435457, 2293777, 983042, 0, 2359313, 983042, 1, 2424849, 983042, 2, 2293778, 1048578, 0, 2359314, 1048578, 1, 2424850, 1048578, 2, 2490386, 1048578, 3, 2293779, 1114114, 0, 2359315, 1114114, 1, 2424851, 1114114, 2, 2293764, 1245186, 0, 2293763, 1179650, 0, 2293762, 1114114, 0, 2359300, 1245186, 1, 2359299, 1179650, 1, 2359298, 1114114, 1, 2424836, 1245186, 2, 2424835, 1179650, 2, 2424834, 1114114, 2, 2490372, 1245186, 3, 2490371, 1179650, 3, 2490370, 1507330, 0, 2293760, 983042, 0, 2359296, 983042, 1, 2424832, 983042, 2, 2293761, 1048578, 0, 2359297, 1048578, 1, 2424833, 1048578, 2, 2490369, 1048578, 3, 2293765, 1310722, 0, 2359301, 1310722, 1, 2424837, 1310722, 2, 2490373, 1441794, 1, 2490385, 1441794, 0, 2490388, 1441794, 268435456, 2424844, 1376258, 2, 2490380, 1376258, 3, 2424845, 1441794, 2, 2490381, 1376258, 268435459, 2424838, 1376258, 0, 2490374, 1376258, 1, 2490387, 1114114, 4, 2752533, 1114114, 6, 2818069, 983042, 6, 2818070, 983042, 8, 2818071, 1048578, 8, 2818072, 1114114, 8, 2818073, 1048578, 6, 2752537, 983042, 5, 2752538, 983042, 8, 2752539, 983042, 8)
+
+[node name="playerSheep" parent="." instance=ExtResource("3_eyo6p")]
+position = Vector2(112, -935)
+
+[node name="Camera2D" type="Camera2D" parent="playerSheep"]
+position = Vector2(10.6667, 176)
+zoom = Vector2(1.3, 1.3)
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+
+[node name="coinSFX" type="AudioStreamPlayer" parent="playerSheep"]
+unique_name_in_owner = true
+stream = ExtResource("4_61mcc")
+script = ExtResource("5_rm8df")
+
+[node name="jumpSFX" type="AudioStreamPlayer" parent="playerSheep"]
+stream = ExtResource("6_d73bp")
+pitch_scale = 1.3
+
+[node name="gameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4_1yjl2")
+
+[node name="coinz" type="Node" parent="."]
+
+[node name="coin" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(7012, 497)
+
+[node name="coin2" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(2954, 364)
+
+[node name="coin3" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(799, 248)
+
+[node name="coin4" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(982, 408)
+
+[node name="coin6" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1994, 457)
+
+[node name="coin5" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1485, 332)
+
+[node name="coin7" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1371, 410)
+
+[node name="coin8" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1276, 411)
+
+[node name="coin9" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1512, 436)
+
+[node name="coin10" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(4560, 340)
+
+[node name="coin11" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1420, 642)
+
+[node name="coin12" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(4734, 293)
+
+[node name="coin13" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(4665, 335)
+
+[node name="coin14" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1659, 496)
+
+[node name="coin15" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(4160, 303)
+
+[node name="coin16" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(5981, 396)
+
+[node name="coin17" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(4298, 534)
+
+[node name="coin18" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(3076, 359)
+
+[node name="coin19" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1849, 465)
+
+[node name="coin20" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(5260, 492)
+
+[node name="coin21" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(6410, 426)
+
+[node name="coin22" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(6141, 426)
+
+[node name="coin23" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(6271, 423)
+
+[node name="coin24" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(5745, 449)
+
+[node name="coin25" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(2133, 788)
+
+[node name="coin26" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(2184, 739)
+
+[node name="coin27" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1561, 700)
+
+[node name="coin28" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(1900, 649)
+
+[node name="coin29" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(4335, 306)
+
+[node name="coin30" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(5171, 293)
+
+[node name="coin31" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(5449, 494)
+
+[node name="coin32" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(6548, 441)
+
+[node name="coin33" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(7348, 481)
+
+[node name="coin34" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(3768, 315)
+
+[node name="coin35" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(7182, 380)
+
+[node name="coin36" parent="coinz" instance=ExtResource("5_yrkrn")]
+position = Vector2(3620, 407)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_left = 7696.0
+offset_top = 597.0
+offset_right = 7991.0
+offset_bottom = 689.0
+size_flags_horizontal = 8
+script = ExtResource("6_x3hfa")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.512
+anchor_bottom = -0.512
+offset_left = 3.0
+offset_top = 52.104
+offset_right = 294.0
+offset_bottom = 136.104
+text = "Congratulations!"
+
+[node name="godotRobot2" parent="." instance=ExtResource("7_07uee")]
+position = Vector2(7915, 551)
+
+[node name="finish" type="Area2D" parent="."]
+position = Vector2(7792, 562)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="finish"]
+position = Vector2(6, -5)
+shape = SubResource("CircleShape2D_2d0q8")
+
+[node name="shrooms" type="Sprite2D" parent="finish"]
+texture_filter = 1
+position = Vector2(6, -2)
+scale = Vector2(2.93751, 3.09375)
+texture = ExtResource("8_o0tbu")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+offset_left = 26.0
+offset_top = 42.0
+offset_right = 216.0
+offset_bottom = 94.0
+
+[node name="coinz" type="Label" parent="UI/Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.539668, 0.616388, 0.648634, 1)
+theme_override_colors/font_shadow_color = Color(0.051139, 0.0559614, 0.239922, 1)
+theme_override_colors/font_outline_color = Color(0.625834, 0.616636, 0.272446, 1)
+theme_override_constants/line_spacing = -3
+theme_override_constants/shadow_offset_x = -2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 3
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxFlat_f6fe0")
+text = "Coins: 0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="endCredits" type="Label" parent="."]
+visible = false
+offset_left = 4.0
+offset_top = 405.0
+offset_right = 739.0
+offset_bottom = 740.0
+theme_override_colors/font_color = Color(0.780851, 0.51544, 0.961387, 1)
+theme_override_colors/font_shadow_color = Color(0.158315, 0.0928858, 0.364594, 1)
+theme_override_font_sizes/font_size = 12
+text = "
+
+
+
+Thanks for playing! This was my very first game (jam)!!! :D
+Took me 22 working hours to complete it ;_;7
+All assets are from itch.io
+-Graphics by - ChaosWitchNikol, Arks, 	PixelJamJar"
+
+[node name="aftermatLore" type="Label" parent="endCredits"]
+layout_mode = 0
+offset_top = 232.0
+offset_right = 486.0
+offset_bottom = 261.0
+theme_override_colors/font_color = Color(0.976471, 0.572549, 0.321569, 1)
+theme_override_colors/font_shadow_color = Color(0.527326, 0.180536, 0.181664, 1)
+theme_override_font_sizes/font_size = 8
+text = "As mr. Sheep finished his last shift at the dreams factory, he went out searching
+for a particular shroom. He braced himself. Home sweet home... He had escaped Dreamsville."
+
+[node name="Cooltext470347419674391" type="Sprite2D" parent="."]
+position = Vector2(346, 647)
+scale = Vector2(0.12395, 0.123016)
+texture = ExtResource("10_jjl4f")
+
+[node name="GodotEmoji16" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(380.062, 654.5)
+scale = Vector2(0.132639, 0.127778)
+texture = ExtResource("10_uupti")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_myjso")
+volume_db = -5.0
+autoplay = true
+script = ExtResource("15_7pe48")
+
+[connection signal="body_entered" from="coinz/coin" to="coinz/coin" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin2" to="coinz/coin2" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin3" to="coinz/coin3" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin4" to="coinz/coin4" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin6" to="coinz/coin6" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin5" to="coinz/coin5" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin7" to="coinz/coin7" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin8" to="coinz/coin8" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin9" to="coinz/coin9" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin10" to="coinz/coin10" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin11" to="coinz/coin11" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin12" to="coinz/coin12" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin13" to="coinz/coin13" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin14" to="coinz/coin14" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin15" to="coinz/coin15" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin16" to="coinz/coin16" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin17" to="coinz/coin17" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin18" to="coinz/coin18" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin19" to="coinz/coin19" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin20" to="coinz/coin20" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin21" to="coinz/coin21" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin22" to="coinz/coin22" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin23" to="coinz/coin23" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin24" to="coinz/coin24" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin25" to="coinz/coin25" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin26" to="coinz/coin26" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin27" to="coinz/coin27" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin28" to="coinz/coin28" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin29" to="coinz/coin29" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin30" to="coinz/coin30" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin31" to="coinz/coin31" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin32" to="coinz/coin32" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin33" to="coinz/coin33" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin34" to="coinz/coin34" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin35" to="coinz/coin35" method="_on_body_entered"]
+[connection signal="body_entered" from="coinz/coin36" to="coinz/coin36" method="_on_body_entered"]

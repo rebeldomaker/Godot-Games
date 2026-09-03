@@ -1,0 +1,119 @@
+[gd_scene load_steps=18 format=3 uid="uid://brsjjremkqywv"]
+
+[ext_resource type="Script" path="res://godot_mascot.gd" id="1_x8jpa"]
+[ext_resource type="Texture2D" uid="uid://bw8qfbybq88ye" path="res://npcs_player/spr_idle.png" id="2_hhm7o"]
+[ext_resource type="Texture2D" uid="uid://k8il2j4el11e" path="res://npcs_player/spr_snooze.png" id="3_ynhhu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_clusr"]
+atlas = ExtResource("2_hhm7o")
+region = Rect2(0, 0, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4nqv"]
+atlas = ExtResource("2_hhm7o")
+region = Rect2(37, 0, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11kip"]
+atlas = ExtResource("2_hhm7o")
+region = Rect2(74, 0, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1odxv"]
+atlas = ExtResource("2_hhm7o")
+region = Rect2(111, 0, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qaa77"]
+atlas = ExtResource("3_ynhhu")
+region = Rect2(0, 0, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogjgy"]
+atlas = ExtResource("3_ynhhu")
+region = Rect2(37, 0, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nara"]
+atlas = ExtResource("3_ynhhu")
+region = Rect2(74, 0, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8qwu"]
+atlas = ExtResource("3_ynhhu")
+region = Rect2(111, 0, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gm0bt"]
+atlas = ExtResource("3_ynhhu")
+region = Rect2(0, 37, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_av08b"]
+atlas = ExtResource("3_ynhhu")
+region = Rect2(37, 37, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qux1t"]
+atlas = ExtResource("3_ynhhu")
+region = Rect2(74, 37, 37, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vbrc"]
+atlas = ExtResource("3_ynhhu")
+region = Rect2(111, 37, 37, 37)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h6u27"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_clusr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4nqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11kip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1odxv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qaa77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogjgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6nara")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8qwu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gm0bt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_av08b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qux1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1vbrc")
+}],
+"loop": true,
+"name": &"sleep",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_otn33"]
+size = Vector2(69, 24.5)
+
+[node name="godotMascot" type="CharacterBody2D"]
+position = Vector2(133, 71)
+script = ExtResource("1_x8jpa")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2, -6)
+sprite_frames = SubResource("SpriteFrames_h6u27")
+animation = &"sleep"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_otn33")

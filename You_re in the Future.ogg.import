@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cr0dwsuf3sl0l"
+path="res://.godot/imported/You_re in the Future.ogg-fe622546ce49dce1681c84eb6560a6bc.oggvorbisstr"
+
+[deps]
+
+source_file="res://You_re in the Future.ogg"
+dest_files=["res://.godot/imported/You_re in the Future.ogg-fe622546ce49dce1681c84eb6560a6bc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
