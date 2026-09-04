@@ -1,0 +1,99 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1733260752
+ Tileset1.png::CompressedTexture2D::7327973775799651374::1732144270::1733260753::1::::<><>::
+#65 A Day - Orchestrated.WAV::AudioStreamWAV::97268699503254572::1732169425::1732186338::1::::<><>::
+area_2d.gd::GDScript::-1::1732187679::0::1::::<>Area2D<>::
+area_2d_2.gd::GDScript::-1::1732199661::0::1::::<>Area2D<>::
+audio_stream_player.gd::GDScript::-1::1732201615::0::1::::<>AudioStreamPlayer<>::
+Autumn.png::CompressedTexture2D::3627813817276329306::1732144132::1732144132::1::::<><>::
+Background .png::CompressedTexture2D::3442095062231093633::1732144210::1732144210::1::::<><>::
+ChillMenu_Loopable.ogg::AudioStreamOggVorbis::1358134794034532843::1732187099::1732187117::1::::<><>::
+coin_sfx.gd::GDScript::-1::1732196265::0::1::::<>AudioStreamPlayer<>::
+Collect_Big_Point.wav::AudioStreamWAV::7742646879974869989::1732169747::1732169747::1::::<><>::
+Collect_Point_2.wav::AudioStreamWAV::7406818147169318067::1732169653::1732169654::1::::<><>::
+cooltext470347419674391.png::CompressedTexture2D::3319118743300164837::1732171193::1732171193::1::::<><>::
+DeterminedStart.wav::AudioStreamWAV::4848284288732266283::1732169565::1732169566::1::::<><>::
+export_presets.cfg::TextFile::-1::1732204911::0::1::::<><>::
+finish.gd::GDScript::-1::1732142309::0::1::::<>Area2D<>::
+full.png::CompressedTexture2D::5952805161318341546::1732142718::1732142718::1::::<><>::
+godotbot.gd::GDScript::-1::1732118829::0::1::::<>RefCounted<>::
+godot_emoji_16.png::CompressedTexture2D::69708329977680895::1732172453::1732172454::1::::<><>::
+godot_mascot.gd::GDScript::-1::1732113028::0::1::::<>CharacterBody2D<>::
+godot_robot.gd::GDScript::-1::1732121191::0::1::::<>CharacterBody2D<>::
+Hit.png::CompressedTexture2D::2463127469748286823::1731883276::1731883276::1::::<><>::
+icon.svg::CompressedTexture2D::2911123600052184013::1731755901::1731755906::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::2248965156036022907::1731883276::1731883276::1::::<><>::
+Jump.wav::AudioStreamWAV::5178632547484535434::1732169681::1732169682::1::::<><>::
+level1.tscn::PackedScene::4888680811570286336::1732807468::0::1::::<><>::uid://bk3y1y20twa6x::::res://overworld_graphics/2024-05-19 distant air night bg.png<>uid://d4mqi3n1s0q0w::::res://overworld_graphics/FoxyNightsTileSet.png<>uid://cfl8p22iwdqii::::res://npcs_player/character_body_2d.tscn<>uid://cf1tk6uinfi8q::::res://Jump.wav<>uid://dsud0i2xayun5::::res://scenes/coinAndCollectables.tscn<>res://score_collecting.gd<>uid://ddr6hh6km1f5t::::res://Collect_Point_2.wav<>res://coin_sfx.gd<>res://speechPanelBubble.gd<>uid://cwsxfsqa0hm7c::::res://scenes/godot_robot.tscn<>res://finish.gd<>uid://87hmgrbo4v2a::::res://overworld_graphics/Ceasar's_Mushroom.png<>res://area_2d.gd<>uid://tl5jttiw8e24::::res://ChillMenu_Loopable.ogg<>res://area_2d_2.gd
+level2.tscn::PackedScene::4858674006789316081::1732806554::0::1::::<><>::uid://brxltfpng5dty::::res://Autumn.png<>uid://cq2t3i8cl5jok::::res://full.png<>uid://cfl8p22iwdqii::::res://npcs_player/character_body_2d.tscn<>res://score_collecting.gd<>uid://ddr6hh6km1f5t::::res://Collect_Point_2.wav<>res://coin_sfx.gd<>uid://dsud0i2xayun5::::res://scenes/coinAndCollectables.tscn<>uid://cf1tk6uinfi8q::::res://Jump.wav<>res://speechPanelBubble.gd<>uid://cwsxfsqa0hm7c::::res://scenes/godot_robot.tscn<>uid://87hmgrbo4v2a::::res://overworld_graphics/Ceasar's_Mushroom.png<>uid://bnj2nvj8f0r2t::::res://cooltext470347419674391.png<>uid://81c6ossyqt0::::res://godot_emoji_16.png<>uid://cr0dwsuf3sl0l::::res://You_re in the Future.ogg<>res://audio_stream_player.gd
+project_time_traker.json::JSON::-1::1732807468::0::1::::<><>::
+ptt.json::JSON::-1::1731892519::0::1::::<><>::
+README.md::TextFile::-1::1731768074::0::1::::<><>::
+Run (32x32).png::CompressedTexture2D::1358704633530746747::1731883276::1731883276::1::::<><>::
+score_collecting.gd::GDScript::-1::1732188727::0::1::::<>Node<>::
+SnowTiles.png::CompressedTexture2D::129573427625561878::1732143369::1732143358::1::::<><>::
+Space Cave Tileset.png::CompressedTexture2D::3957725328587268267::1732143487::1732143488::1::::<><>::
+speechPanelBubble.gd::GDScript::-1::1732120581::0::1::::<>Panel<>::
+Walking_On_Grass_Slow.wav::AudioStreamWAV::6236966996929953443::1732169723::1732169723::1::::<><>::
+Winter.png::CompressedTexture2D::2702600355726364574::1732144166::1732144166::1::::<><>::
+world_tileset.png::CompressedTexture2D::4707038154203243321::1732807001::1732807001::1::::<><>::
+You_re in the Future.ogg::AudioStreamOggVorbis::6017883568110160633::1732201347::1732201348::1::::<><>::
+::res://addons/::1732172967
+::res://addons/dev_time_tracker/::1731767714
+plugin.cfg::TextFile::-1::1731767714::0::1::::<><>::
+time_tracker.gd::GDScript::-1::1731767714::0::1::::<>EditorPlugin<>::
+::res://addons/project-time-tracker/::1731767834
+icon.png::CompressedTexture2D::1013398561372972715::1731767834::1731767834::1::::<><>::
+plugin.cfg::TextFile::-1::1731767834::0::1::::<><>::
+project-time-tracker.gd::GDScript::-1::1731767834::0::1::::<>EditorPlugin<>::
+SectionGraph.gd::GDScript::-1::1731767834::0::1::::<>HBoxContainer<>::
+TrackerDock.gd::GDScript::-1::1731767834::0::1::::<>Control<>::
+TrackerDock.tscn::PackedScene::3329989040241873846::1731767834::0::1::::<><>::res://addons/project-time-tracker/TrackerDock.gd<>res://addons/project-time-tracker/SectionGraph.gd
+TrackerSection.gd::GDScript::-1::1731767834::0::1::::<>VBoxContainer<>::
+TrackerSection.tscn::PackedScene::35838797276754958::1731767834::0::1::::<><>::res://addons/project-time-tracker/TrackerSection.gd
+TrackerSectionColor.gd::GDScript::-1::1731767834::0::1::::<>ColorRect<>::
+TrackerSectionColor.tscn::PackedScene::3012946172539550966::1731767834::0::1::::<><>::res://addons/project-time-tracker/TrackerSectionColor.gd
+::res://addons/project_time_tracker/::1731767812
+icon.png::CompressedTexture2D::832235358926777441::1731767812::1731767812::1::::<><>::
+LICENSE.md::TextFile::-1::1731767812::0::1::::<><>::
+plugin.cfg::TextFile::-1::1731767812::0::1::::<><>::
+ptt.gd::GDScript::-1::1731767812::0::1::::<>EditorPlugin<>::
+PTTUtils.gd::GDScript::-1::1731767812::0::1::::PTTUtils<>RefCounted<>::
+ptt_dock.gd::GDScript::-1::1731767812::0::1::::<>Control<>::
+ptt_dock.tscn::PackedScene::4114449543004681339::1731767812::0::1::::<><>::res://addons/project_time_tracker/ptt_dock.gd
+ptt_object.gd::GDScript::-1::1731767812::0::1::::PTT<>Object<>::
+::res://addons/project_time_tracker/Demo/::1731767812
+TestAccessFunctions.gd::GDScript::-1::1731767812::0::1::::<>Control<>::
+TestAccessFunctions.tscn::PackedScene::8584364223867916632::1731767812::0::1::::<><>::res://addons/project_time_tracker/Demo/TestAccessFunctions.gd
+::res://Assets/::1732807103
+world_tileset.png::CompressedTexture2D::942625471019458224::1732807102::1732807103::1::::<><>::
+::res://npcs_player/::1732622353
+animated_sprite_2d.gd::GDScript::-1::1732135890::0::1::::<>AnimatedSprite2D<>::
+character_body_2d.gd::GDScript::-1::1732188327::0::1::::<>CharacterBody2D<>::
+character_body_2d.tscn::PackedScene::5148525648774080912::1732622353::0::1::::<><>::res://npcs_player/character_body_2d.gd<>uid://baknfdprp5o1w::::res://npcs_player/sheep.png<>res://npcs_player/animated_sprite_2d.gd
+sheep.png::CompressedTexture2D::2407862892644947458::1731876754::1732024687::1::::<><>::
+spr_idle.png::CompressedTexture2D::3999680200134382944::1732069209::1732069209::1::::<><>::
+spr_run.png::CompressedTexture2D::6546418382847542451::1732069209::1732069209::1::::<><>::
+spr_snooze.png::CompressedTexture2D::770519715296511576::1732069209::1732069209::1::::<><>::
+::res://overworld_graphics/::1732141439
+16x16 Tileset.png::CompressedTexture2D::5158964203905211286::1731872106::1732024729::1::::<><>::
+2024-05-19 distant air night bg.png::CompressedTexture2D::3147616639087285493::1731872564::1732024711::1::::<><>::
+Blue.png::CompressedTexture2D::3875197483666303861::1731872359::1732024711::1::::<><>::
+Brown.png::CompressedTexture2D::3907114420672499237::1731872359::1732024711::1::::<><>::
+Ceasar's_Mushroom.png::CompressedTexture2D::2382738718128290578::1732127287::1732127288::1::::<><>::
+coins-chests-etc-2-0.png::CompressedTexture2D::8800320670282624146::1732014599::1732024638::1::::<><>::
+FoxyNightsTileSet.png::CompressedTexture2D::9220498299809100688::1731871986::1732024728::1::::<><>::
+Gray.png::CompressedTexture2D::1860515702518548819::1731872359::1732024711::1::::<><>::
+Green.png::CompressedTexture2D::841980161540266692::1731759508::1732024728::1::::<><>::
+kaleicospio03-Sheet.png::CompressedTexture2D::4002065071973249166::1732141439::1732141439::1::::<><>::
+Pink.png::CompressedTexture2D::3987886614814772327::1731872359::1732024711::1::::<><>::
+Purple.png::CompressedTexture2D::42703462409603435::1731872359::1732024711::1::::<><>::
+s4m_ur4i-8x8-pico-8-free-tiles.png::CompressedTexture2D::4889372484321547126::1732014228::1732024643::1::::<><>::
+squares01-Sheet.png::CompressedTexture2D::1862271441359329922::1732141360::1732141361::1::::<><>::
+Yellow.png::CompressedTexture2D::7979165523013452983::1731872359::1732024711::1::::<><>::
+::res://scenes/::1732622353
+coinAndCollectables.gd::GDScript::-1::1732198320::0::1::::<>Area2D<>::
+coinAndCollectables.tscn::PackedScene::8464176050413505416::1732622353::0::1::::<><>::uid://cfrbnfba1aa6y::::res://overworld_graphics/16x16 Tileset.png<>res://scenes/coinAndCollectables.gd
+coin_and_collectables.gd::GDScript::-1::1732061687::0::1::::<>Area2D<>::
+godot_mascot.tscn::PackedScene::3617353249828185729::1732070598::0::1::::<><>::res://godot_mascot.gd<>uid://bw8qfbybq88ye::::res://npcs_player/spr_idle.png<>uid://k8il2j4el11e::::res://npcs_player/spr_snooze.png
+godot_robot.tscn::PackedScene::6355561116970015418::1732136114::0::1::::<><>::res://godot_robot.gd<>uid://bw8qfbybq88ye::::res://npcs_player/spr_idle.png<>uid://k8il2j4el11e::::res://npcs_player/spr_snooze.png
